@@ -35,9 +35,9 @@ class App extends Component {
         </p>
 
         <div className="App-challenges">
-          <AppChallenge index={1} render={() => <TransactionList transactions={TRANSACTIONS}/>}/>
-          <AppChallenge index={2} render={() => <AmountInput/>}/>
-          <AppChallenge index={3} render={() => <WhatsTheNumber/>}/>
+          <AppChallenge index={1} title={"TransactionList"} render={() => <TransactionList transactions={TRANSACTIONS}/>}/>
+          <AppChallenge index={2} title={"AmountInput"} render={() => <AmountInput/>}/>
+          <AppChallenge index={3} title={"WhatsTheNumber"} render={() => <WhatsTheNumber/>}/>
         </div>
       </div>
     );
