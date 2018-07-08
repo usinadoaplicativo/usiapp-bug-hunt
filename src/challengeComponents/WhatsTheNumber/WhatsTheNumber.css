@@ -1,0 +1,27 @@
+.WhatsTheNumber {
+
+}
+
+.GuessInput {
+    margin-bottom: 12px;
+}
+
+.GuessInput label {
+    margin-right: 8px;
+}
+
+.WhatsTheNumber button {
+    margin: 0 4px;
+}
+
+.WhatsTheNumber .Error {
+    color: red;
+}
+
+.WhatsTheNumber .Wrong {
+    color: red;
+}
+
+.WhatsTheNumber .Correct {
+    color: green;
+}
