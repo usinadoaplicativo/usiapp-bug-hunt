@@ -6,7 +6,6 @@ import TransactionList from './challengeComponents/TransactionList/TransactionLi
 import AmountInput from './challengeComponents/AmountInput/AmountInput';
 import WhatsTheNumber from './challengeComponents/WhatsTheNumber/WhatsTheNumber';
 
-// TODO: Add created with moment offsets 
 const TRANSACTIONS = [
   { merchant: 'Netflix', amount: 19 },
   { merchant: 'AWS', amount: 211 },
