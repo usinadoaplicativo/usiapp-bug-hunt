@@ -27,10 +27,10 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to the DiviPay Bug Hunt</h1>
+          <h1 className="App-title">Welcome to the usiApp Bug Hunt</h1>
         </header>
         <p className="App-intro">
-          Below we have 3 components we would like you to fix. The only code you will need to edit is found in divipay-bug-hunt/src/challengeComponents/.
+          Below we have 3 components we would like you to fix. The only code you will need to edit is found in usiapp-bug-hunt/src/challengeComponents/.
         </p>
 
         <div className="App-challenges">
