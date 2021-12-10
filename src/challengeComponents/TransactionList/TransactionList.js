@@ -7,21 +7,17 @@ export default class TransactionList extends Component {
    *   transactions: Array<{merchant: string, amount: number}>
    */
   render() {
+    
+
     return (
-        <div className="TransactionList">
-            <div className="Transaction">
-              <span>{this.props.transactions[0].merchant}</span>
-              <span>${this.props.transactions[0].amount}</span>
-            </div>
-            <div className="Transaction">
-              <span>{this.props.transactions[1].merchant}</span>
-              <span>${this.props.transactions[1].amount}</span>
-            </div>
-            <div className="Transaction">
-              <span>{this.props.transactions[2].merchant}</span>
-              <span>${this.props.transactions[2].amount}</span>
-            </div>
+
+      this.props.transactions.map(function(item){
+        return <div className="Transaction">
+          <span className="">{item.merchant}</span>
+          <span className="Amount">{item.amount}</span>
         </div>
-    );
+      }))
+  
+    
   }
 }
