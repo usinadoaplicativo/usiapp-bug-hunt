@@ -4,3 +4,13 @@
     padding: 2px 8px;
     border-bottom: 1px solid #D0D0D0;
 }
+.Amount:before{
+    content: "$";
+    float:left;
+    padding-right: 4px;
+}
+.merchant{
+    content: "$";
+    float:left;
+    padding-right: 4px;
+}
