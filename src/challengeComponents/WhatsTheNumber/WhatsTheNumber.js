@@ -21,8 +21,8 @@ export default class WhatsTheNumber extends Component {
     return (
         <div className="WhatsTheNumber">
             { this.state.difference < 0 ? <p className="Wrong">The number is lower</p> : null }
-            { this.state.difference >= 0 ? <p className="Wrong">The number is higher</p> : null }
-            { this.state.difference === 0 ? <p className="Correct">You guessed the number!</p> : null }
+            { this.state.difference > 0 ? <p className="Wrong">The number is higher</p> : null }
+            { this.state.difference === 0 ? <p className="Correct">You guessed the number, that was {this.state.targetNumber} !</p> : null }
 
             <div className="GuessInput">
               <label>Guess:</label>
@@ -31,15 +31,16 @@ export default class WhatsTheNumber extends Component {
 
             { this.state.showError ? <p className="Error">The guess must be an integer</p> : null }
 
-            <button>Submit Guess</button>
-            <button>Reset Game</button>
+            <button onClick={this.submitGuess}>Submit Guess</button>
+            <button onClick={this.resetGame}>Reset Game</button>
         </div>
     );
   }
 
   resetGame = () => {
     this.setState({
-      targetNumber: getRandomInt()
+      targetNumber: getRandomInt(),
+      difference: undefined
     });
   }
 
@@ -53,12 +54,14 @@ export default class WhatsTheNumber extends Component {
     }
 
     this.setState({
+      currentGuess: '',
       showError: false,
       difference: this.state.targetNumber - this.state.currentGuess
     });
   }
 
   handleInputChange = (event) => {
+
     if (!event.target.value) {
       this.setState({
         currentGuess: ''
