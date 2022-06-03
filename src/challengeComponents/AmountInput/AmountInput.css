@@ -1,12 +1,21 @@
 .AmountInput {
-    width: 200px;
+    width: 180px;
     margin: 50px auto;
+    display: flex;
 }
 
 .AmountInput .DollarContainer {
-    
+    font-weight: bold;  
+    border: 1px solid #d0d0d0;
+    border-radius: 8px 0 0 8px;
+    padding: 6px 10px;
+    background-color: #d0d0d0;
 }
 
 .AmountInput input {
-    
+    width: 170px;
+    border-radius: 0 8px 8px 0;
+    font-weight: bold;
+    border: 1px solid #d0d0d0;
+    font-size: 16px;
 }
